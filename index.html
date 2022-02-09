@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- js -->
+    <script src="./js/index.js"></script>
+    <title>Admission</title>
+</head>
+<body>
+    <!-- social media icon -->
+    <div class="uk-position-medium uk-position-bottom-right uk-position-fixed uk-position-z-index">
+        <div class="float-sm">
+            <div class="fl-fl float-ut">
+                <i class="fa fa-youtube-play"></i>
+                <a href="" target="_blank"> Facebook</a>
+            </div>
+            <div class="fl-fl float-fb">
+                <i class="fa fa-facebook"></i>
+                <a href="" target="_blank"> Facebook</a>
+            </div>
+            <div class="fl-fl float-tw">
+                <i class="fa fa-twitter"></i>
+                <a href="" target="_blank">Twitter</a>
+            </div>
+            <div class="fl-fl float-gp">
+                <i class="fa fa-google-plus"></i>
+                <a href="" target="_blank">Google +</a>
+            </div>
+            <div class="fl-fl float-li">
+                <i class="fa fa-linkedin"></i>
+                <a href="" target="_blank">Google +</a>
+            </div>
+            <div class="fl-fl float-ig">
+                <i class="fa fa-instagram"></i>
+                <a href="" target="_blank">Instagram</a>
+            </div>
+        </div>        
+    </div>
+    <!-- banner -->
+    <div class="uk-position-relative uk-visible@m">
+        <img src="./assets/img-banner2.png" alt="">
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left uk-margin-medium-left">
+                    <a class="uk-navbar-item uk-logo" href="#" >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#ffffff"><path d="M10.615 11.885l-2.979 7.411 5.747-5.327 2.927-7.304-5.695 5.22zm1.544 2.02c-.535.078-1.032-.291-1.111-.824-.079-.533.292-1.029.827-1.107.535-.078 1.033.291 1.111.824.078.534-.292 1.029-.827 1.107zm-4.061-12.723c0-.652.686-1.182 1.528-1.182s1.528.53 1.528 1.182c0 .255-.105.491-.284.685-.07-.14-.157-.272-.261-.385.062-.092.098-.194.098-.3 0-.399-.495-.737-1.081-.737s-1.081.337-1.081.737c0 .247.189.47.472.604-.05.132-.083.281-.097.444-.488-.198-.822-.593-.822-1.048zm1.006 13.208l-3.845-.049 3.532-1.672c.029-.425.141-.828.321-1.192l-1.634-1.69 2.203.882c.244-.252.528-.465.842-.627l.206-3.822 1.587 3.473-.543.498c-1.709.141-2.875 1.824-2.377 3.473l-.292.726zm2.896-12.31c-.442 0-.877.026-1.306.077-.162-.428-.495-.815-.94-.715-.451.1-.568.587-.562.998-4.714 1.237-8.192 5.514-8.192 10.6 0 6.053 4.925 10.96 11 10.96s11-4.907 11-10.96-4.925-10.96-11-10.96zm2.389 19.594l-.729-1.079-.184 1.277c-4.824.791-9.228-2.354-10.242-6.853l.977-.623-1.133-.292c-.556-4.692 2.567-8.764 6.825-9.773l.6.935.222-1.09c4.641-.653 8.792 2.294 9.942 6.489l-.947.743 1.136.101c.807 4.697-2.163 8.99-6.467 10.165zm4.172-10.028l-3.368 1.609c-.037.317-.12.621-.242.903l1.707 1.746-2.244-.904c-.257.292-.567.537-.915.72l-.089 3.885-1.671-3.475.602-.558c1.633-.205 2.728-1.82 2.274-3.419l.271-.675 3.675.168z"/></svg>
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
+                  <ul class="uk-navbar-nav">
+                    <li>
+                      <a href="mailto:geethaa14367@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M19 9.062s-5.188-.333-7 1.938c2-4.896 7-5.938 7-5.938v-2l5 4-5 4.019v-2.019zm-18.974 14.938h23.947l-11.973-11.607-11.974 11.607zm1.673-14l10.291-7.488 3.053 2.218c.712-.459 1.391-.805 1.953-1.054l-5.006-3.637-11.99 8.725v12.476l7.352-7.127-5.653-4.113zm15.753 4.892l6.548 6.348v-11.612l-6.548 5.264z"/></svg>
+                        <span class="uk-text-lowercase uk-text-bold uk-margin-small-left" style="color: #fafafa; font-size: 1.2rem;">info@admission.org</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="uk-navbar-right uk-margin-medium-right">
+                    <ul class="uk-navbar-nav">
+                      <li>
+                        <a href="tel:+91 6374503801">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"><path d="M9.762 1.322l2.843-1.322 4.041 7.89-2.725 1.341c-.537 1.259 2.159 6.289 3.297 6.372.09-.058 2.672-1.328 2.672-1.328l4.11 7.933s-2.764 1.354-2.854 1.396c-7.861 3.59-19.101-18.259-11.384-22.282zm1.929 1.274l-1.023.504c-5.293 2.762 4.178 21.185 9.648 18.686l.972-.474-2.271-4.383-1.026.5c-3.163 1.547-8.262-8.219-5.055-9.938l1.007-.497-2.252-4.398zm-.759 18.382c-1.474 1.442-3.914 1.708-4.604.522-.47-.809-.311-1.728-.127-2.793.201-1.161.429-2.478-.295-3.71-1.219-2.077-3.897-1.983-5.906-.671l.956 1.463c.829-.542 1.784-.775 2.493-.609 1.653.388 1.151 2.526 1.03 3.229-.212 1.223-.45 2.61.337 3.968 1.331 2.294 5.054 2.047 7.29-.091-.397-.407-.789-.84-1.174-1.308z"/></svg>
+                          <span class="uk-text-lowercase uk-text-bold uk-margin-small-left" style="color: #fafafa; font-size: 1.2rem;">+91 12345 67890</span>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="uk-container" style="margin-top: 15%;">
+                <div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
+                    <div class="">
+                        <div class="uk-card uk-card-body custom-card">
+                            <div class=" uk-text-center">
+                                <h3 class="uk-card-title uk-text-uppercase uk-text-bold" style="font-size: 3rem; color: white;">Get 50+ courses</h3>
+                                <a class="btn btn-border-3" href="#course">Get Quotes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar -->
+    <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container uk-margin" uk-navbar style="background: linear-gradient(to right, #ff9068 0%, #f7797d 100%)!important;">
+            <div class="uk-navbar-center">
+              <ul class="uk-navbar-nav">
+                <li class="">
+                  <a href="#home" onclick="home()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                    Overview
+                  </a>
+                </li>
+                <li class="">
+                    <a href="#admission" onclick="admission()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                      Why rathinam
+                    </a>
+                </li>
+                
+                <li class="">
+                    <a href="#campus" onclick="campus()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                        campus life
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#course" onclick="course()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                        How to apply
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#scholar" onclick="scholar()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                        scholarship
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#loan" onclick="loan()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                        education loan
+                    </a>
+                </li>
+                <li class="">
+                    <a href=""  class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                        hotel fee
+                    </a>
+                </li>
+                <li class="">
+                    <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
+                        placement
+                    </a>
+                </li>
+              </ul>
+            </div>
+                
+        </nav>          
+    </div> 
+    <div class="uk-hidden@m">
+        <nav class="uk-navbar-container" uk-navbar style="background: linear-gradient(to right, #ff9068 0%, #f7797d 100%)!important;">
+            <div class="uk-navbar-left uk-margin-medium-left">
+        
+                <ul class="uk-navbar-nav">
+                   <li>
+                    <a class="uk-navbar-item uk-logo" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#ffffff"><path d="M10.615 11.885l-2.979 7.411 5.747-5.327 2.927-7.304-5.695 5.22zm1.544 2.02c-.535.078-1.032-.291-1.111-.824-.079-.533.292-1.029.827-1.107.535-.078 1.033.291 1.111.824.078.534-.292 1.029-.827 1.107zm-4.061-12.723c0-.652.686-1.182 1.528-1.182s1.528.53 1.528 1.182c0 .255-.105.491-.284.685-.07-.14-.157-.272-.261-.385.062-.092.098-.194.098-.3 0-.399-.495-.737-1.081-.737s-1.081.337-1.081.737c0 .247.189.47.472.604-.05.132-.083.281-.097.444-.488-.198-.822-.593-.822-1.048zm1.006 13.208l-3.845-.049 3.532-1.672c.029-.425.141-.828.321-1.192l-1.634-1.69 2.203.882c.244-.252.528-.465.842-.627l.206-3.822 1.587 3.473-.543.498c-1.709.141-2.875 1.824-2.377 3.473l-.292.726zm2.896-12.31c-.442 0-.877.026-1.306.077-.162-.428-.495-.815-.94-.715-.451.1-.568.587-.562.998-4.714 1.237-8.192 5.514-8.192 10.6 0 6.053 4.925 10.96 11 10.96s11-4.907 11-10.96-4.925-10.96-11-10.96zm2.389 19.594l-.729-1.079-.184 1.277c-4.824.791-9.228-2.354-10.242-6.853l.977-.623-1.133-.292c-.556-4.692 2.567-8.764 6.825-9.773l.6.935.222-1.09c4.641-.653 8.792 2.294 9.942 6.489l-.947.743 1.136.101c.807 4.697-2.163 8.99-6.467 10.165zm4.172-10.028l-3.368 1.609c-.037.317-.12.621-.242.903l1.707 1.746-2.244-.904c-.257.292-.567.537-.915.72l-.089 3.885-1.671-3.475.602-.558c1.633-.205 2.728-1.82 2.274-3.419l.271-.675 3.675.168z"/></svg>
+                      </a>
+                   </li>
+                </ul>
+        
+            </div>        
+            <div class="uk-navbar-right uk-margin-small-right">        
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="">
+                            <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav-primary" style="border: none;">
+                                <svg width="30px" height="64px" version="1.1" viewBox="0 0 700 700" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m560 148.75h-420c-9.3789 0-18.043-5.0039-22.734-13.125-4.6875-8.1211-4.6875-18.129 0-26.25 4.6914-8.1211 13.355-13.125 22.734-13.125h420c9.3789 0 18.043 5.0039 22.734 13.125 4.6875 8.1211 4.6875 18.129 0 26.25-4.6914 8.1211-13.355 13.125-22.734 13.125zm26.25 131.25c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-315c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h315c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562zm0 157.5c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-210c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h210c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562z"/>
+                                </svg>
+                            </button>
+                            <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+                                <div class="uk-offcanvas-bar "style="background: linear-gradient(to right, #ff9068 0%, #f7797d 100%)!important;">
+                            
+                                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                        <li class="uk-padding">
+                                            <a href="">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#ffffff"><path d="M10.615 11.885l-2.979 7.411 5.747-5.327 2.927-7.304-5.695 5.22zm1.544 2.02c-.535.078-1.032-.291-1.111-.824-.079-.533.292-1.029.827-1.107.535-.078 1.033.291 1.111.824.078.534-.292 1.029-.827 1.107zm-4.061-12.723c0-.652.686-1.182 1.528-1.182s1.528.53 1.528 1.182c0 .255-.105.491-.284.685-.07-.14-.157-.272-.261-.385.062-.092.098-.194.098-.3 0-.399-.495-.737-1.081-.737s-1.081.337-1.081.737c0 .247.189.47.472.604-.05.132-.083.281-.097.444-.488-.198-.822-.593-.822-1.048zm1.006 13.208l-3.845-.049 3.532-1.672c.029-.425.141-.828.321-1.192l-1.634-1.69 2.203.882c.244-.252.528-.465.842-.627l.206-3.822 1.587 3.473-.543.498c-1.709.141-2.875 1.824-2.377 3.473l-.292.726zm2.896-12.31c-.442 0-.877.026-1.306.077-.162-.428-.495-.815-.94-.715-.451.1-.568.587-.562.998-4.714 1.237-8.192 5.514-8.192 10.6 0 6.053 4.925 10.96 11 10.96s11-4.907 11-10.96-4.925-10.96-11-10.96zm2.389 19.594l-.729-1.079-.184 1.277c-4.824.791-9.228-2.354-10.242-6.853l.977-.623-1.133-.292c-.556-4.692 2.567-8.764 6.825-9.773l.6.935.222-1.09c4.641-.653 8.792 2.294 9.942 6.489l-.947.743 1.136.101c.807 4.697-2.163 8.99-6.467 10.165zm4.172-10.028l-3.368 1.609c-.037.317-.12.621-.242.903l1.707 1.746-2.244-.904c-.257.292-.567.537-.915.72l-.089 3.885-1.671-3.475.602-.558c1.633-.205 2.728-1.82 2.274-3.419l.271-.675 3.675.168z"/></svg>   
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#home" onclick="home()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                              Overview
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="#admission" onclick="admission()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                            Why rathinam
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="#course" onclick="course()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                course fee
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                campus life
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                course fee
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                scholarship
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                education loan
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                hotel fee
+                                            </a>
+                                        </li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="">
+                                            <a href="#contact" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                placement
+                                            </a>
+                                        </li>
+                                    </ul>                            
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>        
+            </div>        
+        </nav>
+    </div>
+    <div class="uk-container uk-margin">
+        <div class="uk-grid-small" uk-grid>
+            <!-- uk-width-3-5@m uk-width-2-3@l -->
+            <div class="uk-width-1-1@m">
+                <div class="uk-card uk-card-muted uk-card-body" style="border-radius: 50px;">
+                    <div id="home">
+                        <h2 class="uk-text-capitalize uk-text-bold" style="">Welcome to rathinam home page</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div>
+                            <div class="uk-child-width-1-5@m uk-grid-small uk-grid-match uk-text-center" uk-grid>
+                                <div>
+                                    <a class="card4" href="#">
+                                        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-trophy-usa-flatart-icons-flat-flatarticons.png"/>
+                                        <h3>
+                                            NIRF TOP 150
+                                        </h3>
+                                        <div class="dimmer"></div>
+                                        <div class="go-corner" href="#">
+                                            <div class="go-arrow">
+                                            →
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="card4" href="#">
+                                        <img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-badge-startup-flatart-icons-lineal-color-flatarticons.png"/>
+                                        <h3>
+                                            NAAC A+ grade
+                                        </h3>
+                                        <div class="dimmer"></div>
+                                        <div class="go-corner" href="#">
+                                            <div class="go-arrow">
+                                            →
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="card4" href="#">
+                                        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/000000/external-trophy-usa-flatart-icons-flat-flatarticons.png"/>
+                                        <h3>
+                                            NIRF TOP 150
+                                        </h3>
+                                        <div class="dimmer"></div>
+                                        <div class="go-corner" href="#">
+                                            <div class="go-arrow">
+                                            →
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="card4" href="#">
+                                        <img src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/000000/external-awards-soccer-konkapp-outline-color-konkapp.png"/>
+                                        <h3>
+                                            National Awards 
+                                        </h3>
+                                        <div class="dimmer"></div>
+                                        <div class="go-corner" href="#">
+                                            <div class="go-arrow">
+                                            →
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="card4" href="#">
+                                        <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-brand-business-model-canvas-wanicon-lineal-color-wanicon.png"/>
+                                        <h3>
+                                            ARIIA Ranking 
+                                        </h3>
+                                        <div class="dimmer"></div>
+                                        <div class="go-corner" href="#">
+                                            <div class="go-arrow">
+                                            →
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-section">
+                            <div class="uk-margin-medium-top">
+                                <h1 class="uk-text-center uk-text-bold">National Merit Scholarship</h1>
+                                <div class="uk-text-center" uk-grid>
+                                    <div class="uk-width-1-2">
+                                        <div class="uk-card uk-card-hover uk-card-body">
+                                            <h3 class="uk-text-capitalize">UG scholarship</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2">
+                                        <div class="uk-card uk-card-hover uk-card-body">
+                                            <h3 class="uk-text-capitalize">PG scholarship</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <a class="button uk-text-center" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-section">
+                            <div class="">
+                                <h1 class="uk-text-center uk-text-bold uk-text-capitalize">How to apply </h1>
+                                <div class="uk-child-width-1-2@m uk-grid-small" uk-grid> 
+                                    <div>
+                                        <div class="uk-card">
+                                            <div class="uk-slider-container-offset" uk-slider>
+    
+                                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                                            
+                                                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img class="uk-text-center" src="https://img.icons8.com/external-parzival-1997-outline-color-parzival-1997/50/000000/external-register-the-new-normal-travel-and-tourism-parzival-1997-outline-color-parzival-1997.png"/>
+                                                                    <h3 class="uk-card-title">Register yourself</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-bearicons-outline-color-bearicons/50/000000/external-Mail-social-media-bearicons-outline-color-bearicons.png"/>
+                                                                    <h3 class="uk-card-title">Mail Verification</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-filled-outline-wichaiwi/50/000000/external-form-uxui-design-filled-outline-wichaiwi.png"/>
+                                                                    <h3 class="uk-card-title">Fill the Form</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/fluency/50/000000/checked-identification-documents.png"/>
+                                                                    <h3 class="uk-card-title">Personal Data</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">                                                                
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-others-phat-plus/50/000000/external-academic-law-color-line-others-phat-plus-23.png"/>
+                                                                    <h3 class="uk-card-title">Academic Detail</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">                                                                
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-itim2101-lineal-color-itim2101/50/000000/external-pay-currency-and-money-itim2101-lineal-color-itim2101.png"/>
+                                                                    <h3 class="uk-card-title">Pay Fee</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">                                                                
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/50/000000/external-upload-work-from-home-xnimrodx-lineal-color-xnimrodx.png"/>
+                                                                    <h3 class="uk-card-title">Upload Files</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">                                                                
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-filled-outline-wichaiwi/50/000000/external-fee-china-and-us-trade-war-filled-outline-wichaiwi.png"/>
+                                                                    <h3 class="uk-card-title">Pay Token Fee</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="uk-card uk-card-default">                                                                
+                                                                <div class="uk-card-body uk-text-center">
+                                                                    <img src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/50/000000/external-certificate-back-to-school-kmg-design-outline-color-kmg-design-1.png"/>
+                                                                    <h3 class="uk-card-title">Enroll Yourself</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                            
+                                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                            
+                                                </div>                                            
+                                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default">
+                                            <img src="./assets/image.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-text-center">
+                                    <a class="button uk-text-center" href="#">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="custom-container">
+                                <div class="card">
+                                    <div class="icon">
+                                      <ion-icon name="globe-outline"></ion-icon>
+                                    </div>
+                                    <div class="content">
+                                      <h2>UG Courses</h2>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                                      <a class="btn btn-border-3" href="#course">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                  <div class="icon">
+                                    <ion-icon name="diamond-outline"></ion-icon>
+                                  </div>
+                                  <div class="content">
+                                    <h2>PG Courses</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                                    <a class="btn btn-border-3" href="#course">Read More</a>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="icon">
+                                    <ion-icon name="rocket-outline"></ion-icon>
+                                  </div>
+                                  <div class="content">
+                                    <h2>Special Courses</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis numquam, alias laborum eaque natus dolor totam perspiciatis adipisci ipsum rem amet nobis commodi placeat!</p>
+                                    <a class="btn btn-border-3" href="#course">Read More</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                        </div>
+                    </div>
+                    <div id="admission">
+                        <h2 class="uk-text-capitalize uk-text-bold" style="">why rathinam</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="uk-panel">
+                            <img class="uk-align-left uk-margin-remove-adjacent" src="./assets/studentwithbook.jpg" width="225" height="150" alt="Example image">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="uk-margin-medium-top">
+                            <div class="flexbox">
+                                <div class="flexcard flexcardGreen">
+                                    <div class="flexcardNumber flexcardNumberGreen">01</div>
+                                    <div class="flex flexcardImg">
+                                        <img src="data:image/png;base64,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">
+                                    </div>
+                                    <div class="flex flexcardTitle">
+                                        education qualification
+                                    </div>
+                                    <div class="flex flexcardText">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+                                        temporibus consectetur. 
+                                    </div>
+                                    
+                                </div>
+                                <div class="flexcard flexcardBlue">
+                                    <div class="flexcardNumber flexcardNumberBlue">02</div>
+                                    <div class="flex flexcardImg">
+                                        <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-education-ecology-tulpahn-outline-color-tulpahn.png"/>
+                                    </div>
+                                    <div class="flex flexcardTitle">
+                                        More than an education
+                                    </div>
+                                    <div class="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+                                        temporibus consectetur.</div>
+                                    
+                                </div>
+                                <div class="flexcard flexcardOrange">
+                                    <div class="flexcardNumber flexcardNumberOrange">03</div>
+                                    <div class="flex flexcardImg">
+                                        <img src="https://img.icons8.com/external-fill-outline-pongsakorn-tan/64/000000/external-experience-help-and-support-fill-outline-pongsakorn-tan.png"/>
+                                    </div>
+                                    <div class="flex flexcardTitle">
+                                        Flexible learning options
+                                    </div>
+                                    <div class="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+                                        temporibus consectetur.</div>
+                                </div>
+                                <div class="flexcard flexcardPink">
+                                    <div class="flexcardNumber flexcardNumberPink">04</div>
+                                    <div class="flex flexcardImg">
+                                        <img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-career-startup-flatart-icons-lineal-color-flatarticons.png"/>
+                                    </div>
+                                    <div class="flex flexcardTitle">
+                                        Better career prospects
+                                    </div>
+                                    <div class="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+                                        temporibus consectetur</div>                                    
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="uk-margin-medium-top">
+                            <div class="uk-child-width-1-3@m" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img src="./assets/a+.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title uk-text-capitalize">A+ Academic</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title uk-text-capitalize">fantastic faculty</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                        <div class="uk-card-media-bottom">
+                                            <img src="./assets/a+.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img src="./assets/a+.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title">Alumini</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-child-width-1-3@m" uk-grid>
+                                
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img src="./assets/a+.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title uk-text-capitalize">The house system</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title uk-text-capitalize">Notable guest</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                        <div class="uk-card-media-bottom">
+                                            <img src="./assets/a+.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default">                                        
+                                        <div class="uk-card-media-bottom">
+                                            <img src="./assets/a+.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h3 class="uk-card-title uk-text-capitalize">Curriculum</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="campus">
+                        <div>
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-building-real-estate-flatart-icons-lineal-color-flatarticons-1.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">Infrastructure</p>
+                                        <h3 class="uk-margin-remove-top">The Swachh Campus</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- location -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/plasticine/64/000000/marker.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">Location</p>
+                                        <h3 class="uk-margin-remove-top">Environment</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- tech -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/doodle/64/000000/company--v1.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">Tech World</p>
+                                        <h3 class="uk-margin-remove-top">IT Park</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- travel -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/doodle/64/000000/bus--v1.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">vehicle</p>
+                                        <h3 class="uk-margin-remove-top">Transport Facility</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- foodie -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/doodle/64/000000/cafe-building.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">food court</p>
+                                        <h3 class="uk-margin-remove-top">cafeteria</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- class room -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/doodle/64/000000/city-buildings.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">study hall</p>
+                                        <h3 class="uk-margin-remove-top">class room</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- power house -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/doodle/64/000000/electrical--v1.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">human dynamo</p>
+                                        <h3 class="uk-margin-remove-top">Power house</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- library -->
+                        <div class="uk-margin-large-top">
+                            <div class="uk-child-width-1-2@m uk-grid-match uk-grid-small" uk-grid>
+                                <div>
+                                    <div class="uk-card">
+                                        <img src="./assets/campus.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-body">
+                                        <img src="https://img.icons8.com/doodle/64/000000/book-shelf--v1.png"/>
+                                        <p class="uk-text-muted uk-text-bold uk-margin-remove-bottom uk-text-uppercase">Library</p>
+                                        <h3 class="uk-margin-remove-top">information center</h3>
+                                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="course">
+                        <div>
+                            <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img src="./assets/agricultural.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h5 class="">B.E agricultural Engineering</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default">
+                                        <div class="uk-card-media-top">
+                                            <img src="./assets/ece.PNG" alt="">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h5 class="">B.E Electronics & Communication Engineering</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scholar">
+                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card">
+                                    <img src="./assets/agricultural.jpg" alt="" style="border-top-right-radius: 15%; border-bottom-left-radius: 15%;">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-body">
+                                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco Excepteur sint occaecat cupidatat non proident, sunt in.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-body">
+                                    <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco Excepteur sint occaecat cupidatat non proident, sunt in.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card">
+                                    <img src="./assets/agricultural.jpg" alt="" style="border-top-right-radius: 15%; border-bottom-left-radius: 15%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="uk-width-1-5@m uk-width-1-3@l uk-margin-bottom">
+                <div class="uk-card uk-card-default uk-card-body uk-text-center">
+                    <div>
+                        <h3>Title 1</h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Title 2</h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Title 3</h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Title 4</h3>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="uk-margin-remove">Title 5</h3>
+                    </div>
+                </div>
+            </div>             -->
+        </div>
+    </div>
+    <!-- course -->
+    
+    <div class="uk-section-default uk-section uk-padding-remove-bottom" style="background: linear-gradient(to right, #ff9068 0%, #f7797d 100%)!important;">
+        <div class="uk-container">
+            <div class="uk-child-width-1-4@m uk-margin-small-top" uk-grid>
+                <div class="uk-margin-small-top">
+                    <h3 class="uk-margin-remove uk-text-bold" style="color: White;">Company Logo</h3>
+                    <p style="color:#fafafa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div>
+                    <h3 class="uk-margin-remove uk-text-bold uk-text-center" style="color: White;">Quick Link</h3>
+                    <ul class="uk-list">
+                        <li class="uk-text-capitalize uk-text-center">
+                            <a href="#" style="color: White;">Home</a>
+                        </li>
+                        <li class="uk-text-capitalize uk-text-center">
+                            <a href="#" style="color: White;">Admission</a>
+                        </li>
+                        <li class="uk-text-capitalize uk-text-center">
+                            <a href="#" style="color: White;">Course</a>
+                        </li>
+                        <li class="uk-text-capitalize uk-text-center">
+                            <a href="#" style="color: White;">Program</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="uk-margin-remove uk-text-bold uk-text-center" style="color: White;">Contact</h3>
+                    <p class="uk-margin-small" style="color: White;"><b>Address : </b><br>Rathinam Techzone Campus, Pollachi Road, Eachanari, Coimbatore, Tamil Nadu, India - 641021.</p>
+                    <p class="uk-margin-remove" style="color: White;">
+                        <b>ping me :</b>
+                        <br>
+                        <a href="tel:0422 4040906" class="uk-margin-remove-top" style="color: White;">
+                            0422-4040906
+                        </a>
+                        <a href="tel:+91 84484 48909" class="uk-margin-remove-top" style="color: White;"> +91 84484 48909
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="uk-text-bold uk-text-center" style="color: White;">Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.3801303621453!2d76.97641001411769!3d10.93463125924519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85beadb7201f3%3A0xf3ce2a464d288f13!2sRathinam%20Institute%20of%20Management!5e0!3m2!1sen!2sin!4v1644294274158!5m2!1sen!2sin" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="uk-margin-small-bottom uk-text-center uk-text-meta" style="color: white;">Copyrights © 2020. Rathinam Group of Institutions</p>
+    </div>
+</body>
+</html>
