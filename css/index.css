@@ -16,7 +16,7 @@
 {
     display: block;
 }
-#event, #admission,#campus,#scholar, #loan, #hostel
+#event, #admission,#campus,#scholar, #loan, #hostel, #placement
 {
     display: none;
 }
@@ -135,7 +135,8 @@
   padding: 4px;
   width: 190px;
   position: fixed;
-  right: -160px;
+  text-align: right;
+  left: -160px;
   z-index: 1000;
   font: normal normal 10px Arial;
   -webkit-transition: all .25s ease;
@@ -146,15 +147,15 @@
 }
 
 .fa {
-  font-size: 20px;
+  font-size: 19px;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px;
   width: 40px;
   margin-left: 8px;
 }
 
 .fl-fl:hover {
-  right: 0;
+  left: 0;
 }
 
 .fl-fl a {
@@ -244,7 +245,7 @@
 	 color: #fff;
    
 }
- 
+ /* home testimonial */
 /* course */
 
 .custom-container {
