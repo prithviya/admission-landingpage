@@ -7,6 +7,8 @@ function home()
   document.getElementById("course").style.display = "none";
   document.getElementById("campus").style.display = "none";
   document.getElementById("scholar").style.display = "none";
+  document.getElementById("loan").style.display = "none";
+  document.getElementById("hostel").style.display = "none";
 }
 
 function admission()
@@ -16,6 +18,8 @@ function admission()
   document.getElementById("course").style.display = "none";
   document.getElementById("campus").style.display = "none";
   document.getElementById("scholar").style.display = "none";
+  document.getElementById("loan").style.display = "none";
+  document.getElementById("hostel").style.display = "none";
 }
 function course()
 {
@@ -24,6 +28,8 @@ function course()
   document.getElementById("course").style.display = "block";
   document.getElementById("campus").style.display = "none";
   document.getElementById("scholar").style.display = "none";
+  document.getElementById("loan").style.display = "none";
+  document.getElementById("hostel").style.display = "none";
 }
 function campus()
 {
@@ -32,6 +38,8 @@ function campus()
   document.getElementById("course").style.display = "none";
   document.getElementById("campus").style.display = "block";
   document.getElementById("scholar").style.display = "none";
+  document.getElementById("loan").style.display = "none";
+  document.getElementById("hostel").style.display = "none";
 }
 function scholar()
 {
@@ -40,4 +48,26 @@ function scholar()
   document.getElementById("course").style.display = "none";
   document.getElementById("campus").style.display = "none";
   document.getElementById("scholar").style.display = "block";
+  document.getElementById("loan").style.display = "none";
+  document.getElementById("hostel").style.display = "none";
+}
+function loan()
+{
+  document.getElementById("home").style.display = "none";
+  document.getElementById("admission").style.display = "none";
+  document.getElementById("course").style.display = "none";
+  document.getElementById("campus").style.display = "none";
+  document.getElementById("scholar").style.display = "none";
+  document.getElementById("loan").style.display = "block";
+  document.getElementById("hostel").style.display = "none";
+}
+function hostel()
+{
+  document.getElementById("home").style.display = "none";
+  document.getElementById("admission").style.display = "none";
+  document.getElementById("course").style.display = "none";
+  document.getElementById("campus").style.display = "none";
+  document.getElementById("scholar").style.display = "none";
+  document.getElementById("loan").style.display = "none";
+  document.getElementById("hostel").style.display = "block";
 }
