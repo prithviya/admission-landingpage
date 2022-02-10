@@ -577,4 +577,36 @@
 
 }
 
-/* course 2 card */
+/* blink button */
+
+.blink-button {
+  position: relative;
+  color: #c31432;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 2px solid #c31432;
+  border-radius: 1000px;
+  padding: 10px 20px;
+  margin: 40px;
+  box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+  transition: 0.5s all ease-in-out;
+}
+.blink-button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right top,  #c31432 0%, #240b36 100%);
+  color: #fff;
+  animation: none;
+  text-decoration: none;
+}
+.button-pulse {
+  animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+  box-shadow: 0 0 0 0 #c31432;
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+ }
+}
