@@ -187,68 +187,64 @@
 }
 /* card icon */
 
-.go-corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background-color: #00838d;
-    border-radius: 0 4px 0 32px;
-  }
-  
-  .go-arrow {
-    margin-top: -4px;
-    margin-right: -4px;
-    color: white;
-    font-family: courier, sans;
-  }
-  
-  .card4 {
-    display: block;
-    top: 0px;
-    position: relative;
-    max-width: 262px;
-    background-color: linear-gradient(to right, #FF5F6D 0%, #FFC371 100%);
-    border-radius: 4px;
-    padding: 25px 24px;
-    overflow: hidden;
-    border: 1px solid #FF5F6D;
+ .go-corner {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: absolute;
+	 width: 32px;
+	 height: 32px;
+	 overflow: hidden;
+	 top: 0;
+	 right: 0;
+	 background-color: linear-gradient(to right top,  #c31432 0%, #240b36 100%);
+	 border-radius: 0 4px 0 42px;
 }
-.card4 .go-corner {
-    background-color: #FF5F6D;
-    height: 100%;
-    width: 16px;
-    padding-right: 9px;
-    border-radius: 0;
-    transform: skew(6deg);
-    margin-right: -36px;
-    align-items: start;
-    background-image: #03045e;
+ .go-arrow {
+	 margin-top: -4px;
+	 margin-right: -4px;
+	 color: white;
+	 font-family: courier, sans;
 }
-.card4 .go-arrow {
-    transform: skew(-6deg);
-    margin-left: -2px;
-    margin-top: 9px;
-    opacity: 0;
+ .card1 {
+	 display: block;
+	 position: relative;
+	 max-width: 262px;
+	 background: #404040;
+	 border-radius: 4px;
+	 padding: 32px 24px;
+	 margin: 12px;
+	 text-decoration: none;
+	 z-index: 0;
+	 overflow: hidden;
 }
-.card4:hover {
-    border: 1px solid #FF5F6D;
-    text-decoration: none;
+ .card1:before {
+	 content: "";
+	 position: absolute;
+	 z-index: -1;
+	 top: -8px;
+	 right: -8px;
+	 background: linear-gradient(to right top,  #c31432 0%, #240b36 100%);
+	 height: 32px;
+	 width: 32px;
+	 border-radius: 32px;
+	 transform: scale(1);
+	 transform-origin: 50% 50%;
+	 transition: transform 0.25s ease-out;
 }
-.card4 h3 {
-    margin-top: 8px;
+ .card1:hover:before {
+	 transform: scale(21);
 }
-.card4:hover .go-corner {
-    margin-right: -12px;
+ .card1:hover p {
+	 transition: all 0.3s ease-out;
+	 color: rgba(255, 255, 255, 0.8);
 }
-.card4:hover .go-arrow {
-    opacity: 1;
-}  
+ .card1:hover h3 {
+	 transition: all 0.3s ease-out;
+	 color: #fff;
+   
+}
+ 
 /* course */
 
 .custom-container {
