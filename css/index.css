@@ -246,6 +246,129 @@
    
 }
  /* home testimonial */
+ h3.card__title {
+  margin: 0;
+}
+.card__btn {
+  font-size: 1rem;
+  padding: 12px 25px;
+}
+.speaking-cards {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .speaking-cards {
+    grid-template-columns: repeat(2, 1fr);
+ }
+}
+@media (min-width: 800px) {
+  .speaking-cards {
+    grid-template-columns: repeat(4, 1fr);
+ }
+}
+.cards {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  /* width: 100%; */
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 200px;
+ }
+}
+.cards:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+}
+.cards:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 200%; */
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+  transform: translateY(-50%);
+  transition: transform 1400ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.cards:nth-child(1):before {
+  /* background-image: url(../assets/studentwithbook.jpg); */
+}
+.card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
+}
+.card__content > * + * {
+  margin-top: 1rem;
+}
+.card__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (hover: hover) and (min-width: 600px) {
+  .cards:after {
+    transform: translateY(0);
+ }
+  .card__content {
+    transform: translateY(calc(100% - 4.5rem));
+ }
+  .card__content > *:not(.card__title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+ }
+  .cards:hover, .cards:focus-within {
+    align-items: center;
+ }
+  .cards:hover:before, .cards:focus-within:before {
+    transform: translateY(-4%);
+ }
+  .cards:hover:after, .cards:focus-within:after {
+    transform: translateY(-50%);
+ }
+  .cards:hover .card__content, .cards:focus-within .card__content {
+    transform: translateY(0);
+ }
+  .cards:hover .card__content > *:not(.card__title), 
+  .cards:focus-within .card__content > *:not(.card__title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 8ms;
+ }
+  .cards:focus-within:before, .cards:focus-within:after, .cards:focus-within .card__content, .card:focus-within .card__content > *:not(.card__title) {
+    transition-duration: 0s;
+ }
+}
+
 /* course */
 
 .scholar-card{
@@ -380,7 +503,7 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   justify-content: flex-start;
   width: 20%;
   align-items: baseline;
-  height: 400px;
+  height: 350px;
   border-radius: 20px;
 }
 
