@@ -1,34 +1,52 @@
-const  Btnprevious  =  document.getElementById('Previous');
-const  Btnnext  =  document.getElementById('Next');
-const  Btnsubmit  =  document.getElementById('Submit');
-const  bullets  =  [...document.querySelectorAll('.bullets')];
+var currentTab = 0;
 
-let current = 0;
-const max = 2;
+showTab(currentTab);
 
-Btnprevious.style.display  =  'none';
-Btnsubmit.style.display  =  'none'; 
+function showTab(n) {
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if(n == (x.length-1))
+  {
+    document.getElementById("nextBtn").style.display = "none";
+} else {
+  document.getElementById("nextBtn").style.display = "inline"; 
+  }
+//   if (n == (x.length - 1)) {
+//     document.getElementById("nextBtn").innerHTML = "Completed";
+//   } 
+// 	else {
+//     document.getElementById("nextBtn").innerHTML = "Next";
+//   }
+  fixStepIndicator(n)
+}
 
-Btnnext.addEventListener('click',  ()  =>  {
-    bullets[current].classList.add('completed');
-    current  +=  1;
-    Btnprevious.style.display  =  'inline';
-    if  (current  ===  max)  {
-        Btnnext.style.display  =  'none';
-        Btnsubmit.style.display  =  'inline';
-    }
-}); 
+function next(n) {
+  var x = document.getElementsByClassName("tab");
+  
+  x[currentTab].style.display = "none";
+     
+  currentTab = currentTab + n;
+  
+  if (currentTab >= x.length) {
+    
+    return false;
+  }
+  
+  showTab(currentTab);
+}
 
-Btnprevious.addEventListener('click',  ()  =>  {
-    bullets[current  -  1].classList.remove('completed');
-    current  -=  1;
-    Btnsubmit.style.display  =  'none';
-    Btnnext.style.display  =  'inline';
-    if  (current  ===  0)  {
-        Btnprevious.style.display  =  'none';
-    }
-}); 
-
-Btnsubmit.addEventListener('click',  ()  =>  {
-    location.reload();
-}); 
+function fixStepIndicator(n) {
+  
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  
+  x[n].className += " active";
+}
