@@ -89,3 +89,13 @@ function placement()
   document.getElementById("hostel").style.display = "none";
   document.getElementById("placement").style.display = "block";
 }
+
+// open off canva
+openOffcanvas() 
+ {
+   UIkit.offcanvas('#offcanvas-slide').show();
+   UIkit.scrollspyNav('#offcanvas-slide',
+   {
+     closest: 'a', scroll:true, offset: 50
+    });
+ }
