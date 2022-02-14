@@ -436,8 +436,8 @@ max-height: 120px;
 }
 
 .scholar-card-1{
-background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-    background-repeat: no-repeat;
+  background-image: url(../assets/scholar-icon/cbse.png);
+  background-repeat: no-repeat;
   background-position: right;
   background-size: 80px;
 }
@@ -499,6 +499,20 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   .scholar-card-09
   {
     background-image: url(../assets/scholar-icon/merit.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-10
+  {
+    background-image: url(../assets/scholar-icon/sports.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-11
+  {
+    background-image: url(../assets/scholar-icon/sibling.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
