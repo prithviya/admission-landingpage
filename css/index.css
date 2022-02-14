@@ -489,6 +489,20 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
     background-position: right;
     background-size: 80px;
   }
+  .scholar-card-08
+  {
+    background-image: url(../assets/scholar-icon/mark.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-09
+  {
+    background-image: url(../assets/scholar-icon/merit.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
 /* stepper */
 .card {
   background: #fff;
