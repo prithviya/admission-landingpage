@@ -24,13 +24,6 @@
 .animate-charcter
 {
    text-transform: uppercase;
-  /* background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  ); */
   background-image: linear-gradient(-225deg, 
   #c31432 0%, #a10043 30%, #780049 57%, #4d0845 80%, #240b36 100%);
   background-size: auto auto;
@@ -448,6 +441,54 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   background-position: right;
   background-size: 80px;
 }
+.scholar-card-01{
+  background-image: url(../assets/scholar-icon/farmer.png);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-02
+  {
+    background-image: url(../assets/scholar-icon/service.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-03
+  {
+    background-image: url(../assets/scholar-icon/alumni.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-04
+  {
+    background-image: url(../assets/scholar-icon/employee.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-05
+  {
+    background-image: url(../assets/scholar-icon/academic.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-06
+  {
+    background-image: url(../assets/scholar-icon/coporate.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  .scholar-card-07
+  {
+    background-image: url(../assets/scholar-icon/government.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
 /* stepper */
 .card {
   background: #fff;
