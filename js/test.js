@@ -17,12 +17,12 @@ function showTab(n) {
 } else {
   document.getElementById("nextBtn").style.display = "inline"; 
   }
-//   if (n == (x.length - 1)) {
-//     document.getElementById("nextBtn").innerHTML = "Completed";
-//   } 
-// 	else {
-//     document.getElementById("nextBtn").innerHTML = "Next";
-//   }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Completed";
+  } 
+	else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
   fixStepIndicator(n)
 }
 

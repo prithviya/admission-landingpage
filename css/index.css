@@ -59,7 +59,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 
@@ -512,7 +512,7 @@ max-height: 120px;
   font-weight: 500;
   font-size: 16px;
   color: white;
-  background: linear-gradient(to right top, #c31432 0%, #240b36 100%);
+  background: linear-gradient(to right top, #c31432 0%, #240b36 100%); 
   box-shadow: 0px 5px 0px 0px #c31432;
 }
 .card-footer button:active {
@@ -563,13 +563,12 @@ max-height: 120px;
 }
 
 .flexcardTitle {
-  font-family: 'Jost', sans-serif;
+  /* font-family: 'Jost', sans-serif; */
   text-transform: capitalize;
   letter-spacing: 1px;
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
-  color:
 }
 
 .flexcardText {
