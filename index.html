@@ -1,7 +1,3 @@
-
-
-
-
 	<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -112,7 +108,7 @@
         <div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
             <nav class="uk-navbar-container" uk-navbar style="background: linear-gradient(to right top,  #c31432 0%, #240b36 100%);">
                 <div class="uk-navbar-center">
-                  <ul class="uk-navbar-nav">
+                  <ul class="uk-navbar-nav"uk-scrollspy-nav="closest: 'li'; scroll:true; offset: 100;">
                     <li class="">
                       <a href="#home" onclick="home()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 18px;">
                         Overview
@@ -282,9 +278,9 @@
                 <div class="uk-width-1-1@m">
                     <div class="uk-card uk-card-muted uk-card-body" style="border-radius: 50px;">
                         <div id="home">
-                            <h1 class="uk-text-capitalize uk-text-bold uk-margin-remove"style="font-size:3rem;">Together we are <b class="animate-charcter" >unstoppable</b></h1>
+                            <h1 class="uk-text-capitalize uk-text-center uk-text-bold uk-margin-remove"style="font-size:3rem;">Together we are <b class="animate-charcter" >unstoppable</b></h1>
                             
-                            <p class="uk-text-emphasis"><span style="font-size: 3rem; font-weight: 900;">R</span>athinam Group of Institutions has been thrived its layers in the education pitch, with its outstanding academia. We are the India’s leading institution in Innovation, Incubation and Industry Collaborations. We ranked among the top in <i><b>NIRF, ARIIA, INSTITUTIONS INNOVATION COUNCIL, THE WEEK, OUTLOOK, TIMES OF INDIA and INDIA TODAY.</b></i></p>
+                            <p class="uk-text-emphasis"><span style="font-size: 3rem; font-weight: 900;">R</span>athinam <span style="font-size: 3rem; font-weight: 900;">G</span>roup of Institutions has been thrived its layers in the education pitch, with its outstanding academia. We are the India’s leading institution in Innovation, Incubation and Industry Collaborations. We ranked among the top in <i><b>NIRF, ARIIA, INSTITUTIONS INNOVATION COUNCIL, THE WEEK, OUTLOOK, TIMES OF INDIA and INDIA TODAY.</b></i></p>
                             <div>
                                 <div class="uk-slider-container-offset" uk-slider="autoplay: true">
         
@@ -613,7 +609,7 @@
                             </div>
                             
                             <!-- video -->
-                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                            <div class="uk-visible@m uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
                                 <div>
                                     <div class="uk-card uk-card-body">
                                         <div class="">
@@ -625,6 +621,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <iframe width="525" height="300" src="https://www.youtube.com/embed/IXvsllHg-1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>                                
+                            </div> 
+                            <div class="uk-child-width-1-1@s uk-grid-small uk-grid-match" uk-grid>
                                 <div class="uk-card-body">
                                     <div uk-slider="autoplay: true;autoplay-interval: 8500;">
     
@@ -637,7 +640,9 @@
                                                     border-radius: 15px;">
                                                         <div class="uk-card-body">
                                                             <i><h3 class="uk-card-title uk-text-center uk-margin-remove">Gowtham B.E</h3></i>
-                                                            <p>I have done my mechanical engineering. Our college has provided students of our branch
+                                                            <span><i class="fa fa-star-o" style="color: #333;"></i><i class="fa fa-star-o" style="color: #333;"></i></span>
+                                                            <span><i class="fa fa-star-o" style="color: #333;"></i></span>
+                                                            <p class="" style="color: #333;">I have done my mechanical engineering. Our college has provided students of our branch
                                                                 with exploring features with updated technology in the core field. This helped me a lot in
                                                                 strengthening my practical zone. This became my strength and was easily selected in
                                                                 placement. Now I am working in a well-developing company as a senior executive and I am
@@ -651,7 +656,7 @@
                                                     border-radius: 15px;">
                                                         <div class="uk-card-body">                                                            
                                                             <i><h3 class="uk-card-title uk-text-center uk-margin-remove">Prithviya B.A</h3></i>
-                                                            <p>I would specially thank all my teachers and also to everyone who guided me to the right path.
+                                                            <p style="color: #333;">I would specially thank all my teachers and also to everyone who guided me to the right path.
                                                                 Rathinam plays a major role of my confidence level. I was a Tamil medium student. My
                                                                 English knowledge was very low when I entered into the college. I was literally panicked a
                                                                 lot during my initial days at college. The journey of my life at RTC moulded me and I
@@ -665,7 +670,7 @@
                                                     border-radius: 15px;">
                                                         <div class="uk-card-body">                                                            
                                                             <i><h3 class="uk-card-title uk-text-center uk-margin-remove">Shrika</h3></i>
-                                                            <p>Guidance and support acts as a two sides of a single coin RTC. This gives better career
+                                                            <p style="color: #333;">Guidance and support acts as a two sides of a single coin RTC. This gives better career
                                                                 opportunities and gives path for the betterment of students. This made me from good to
                                                                 better to best. I really suggest everyone to our college to get bright future.</p>
                                                         </div>
@@ -680,7 +685,7 @@
                                                                 <img class="uk-text-center" src="https://img.icons8.com/office/34/000000/circled-user-female-skin-type-4.png"/>
                                                             </div>
                                                             <i><h3 class="uk-card-title uk-text-center uk-margin-remove">Pranav M.E</h3></i>
-                                                            <p>Our college is the best when it comes to infrastructure. It is a big and beautiful campus. Our
+                                                            <p style="color: #333;">Our college is the best when it comes to infrastructure. It is a big and beautiful campus. Our
                                                                 college faculty are highly qualified. Rathinam facilitates good infrastructure with friendly
                                                                 faculty members.</p>
                                                         </div>
@@ -692,7 +697,7 @@
                                                     border-radius: 15px;">
                                                         <div class="uk-card-body">                                                            
                                                             <h3 class="uk-card-title uk-text-center uk-margin-remove">Shree</h3>
-                                                            <p>RTC has three awesome qualities:
+                                                            <p style="color: #333;">RTC has three awesome qualities:
                                                                 Good infrastructure with peaceful environment
                                                                 Provide infinite number of opportunities
                                                                 Experienced supportive faculty members.
@@ -712,13 +717,13 @@
                                     </div>
                                        
                                 </div>
-                            </div>    
+                            </div>
                             
                             <!-- testimonal -->
                             <div>
                                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="sets: true">
 
-                                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid-small">
+                                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small">
                                         <li>
                                             <figure class="snip1527">
                                                 <div class="image">
@@ -730,56 +735,44 @@
                                             </figure>
                                         </li>
                                         <li>                                            
-                                            <div class="" style="border-radius: 5px;">
-                                                <div class="uk-card uk-card-default" >
-                                                    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('./assets/arts.jpg');">
-                                                        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                                                            <h1 uk-parallax="opacity: 0,1; x: -100,0; scale: 2,1; viewport: 0.5;">Arts College</h1>
-                                                            <p style="color:#fafafa" uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                            <a href="#" class="blink-button button-pulse">Apply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>                                    
+                                            <figure class="snip1527">
+                                                <div class="image">
+                                                    <img src="./assets/home-img/clg.png" alt="pr-sample23" /></div>
+                                                <figcaption>                                                  
+                                                  <h3 class="uk-margin-small">Rathinam College of Arts and Science </h3>
+                                                </figcaption>
+                                                <a href="#"></a>
+                                            </figure>                                   
                                         </li>
                                         <li>
-                                            <div class="" style="border-radius: 5px;">
-                                                <div class="uk-card uk-card-default" >
-                                                    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('./assets/arts.jpg');">
-                                                        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                                                            <h1 uk-parallax="opacity: 0,1; x: -100,0; scale: 2,1; viewport: 0.5;">Management College</h1>
-                                                            <p style="color:#fafafa" uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                            <a href="#" class="blink-button button-pulse">Apply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <figure class="snip1527">
+                                                <div class="image">
+                                                    <img src="./assets/home-img/clg.png" alt="pr-sample23" /></div>
+                                                <figcaption>                                                  
+                                                  <h3 class="uk-margin-small">Rathinam Institute of Management </h3>
+                                                </figcaption>
+                                                <a href="#"></a>
+                                            </figure>
                                         </li>
                                         <li>
-                                            <div class="" style="border-radius: 5px;">
-                                                <div class="uk-card uk-card-default" >
-                                                    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('./assets/arts.jpg');">
-                                                        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                                                            <h1 uk-parallax="opacity: 0,1; x: -100,0; scale: 2,1; viewport: 0.5;">Architecture college</h1>
-                                                            <p style="color:#fafafa" uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                            <a href="#" class="blink-button button-pulse">Apply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <figure class="snip1527">
+                                                <div class="image">
+                                                    <img src="./assets/home-img/clg.png" alt="pr-sample23" /></div>
+                                                <figcaption>                                                  
+                                                  <h3 class="uk-margin-small">Rathinam School of Architecture</h3>
+                                                </figcaption>
+                                                <a href="#"></a>
+                                            </figure>
                                         </li>
                                         <li>
-                                            <div class="" style="border-radius: 5px;">
-                                                <div class="uk-card uk-card-default" >
-                                                    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('./assets/arts.jpg');">
-                                                        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                                                            <h1 uk-parallax="opacity: 0,1; x: -100,0; scale: 2,1; viewport: 0.5;">Physiotherapy college</h1>
-                                                            <p style="color:#fafafa" uk-parallax="opacity: 0,1; y: -100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                            <a href="#" class="blink-button button-pulse">Apply</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <figure class="snip1527">
+                                                <div class="image">
+                                                    <img src="./assets/home-img/clg.png" alt="pr-sample23" /></div>
+                                                <figcaption>                                                  
+                                                  <h3 class="uk-margin-small">Rathinam College of Physiotherapy</h3>
+                                                </figcaption>
+                                                <a href="#"></a>
+                                            </figure>
                                         </li>
                                     </ul>
                                 
@@ -1692,53 +1685,8 @@
             </div>
         </div>
         <!-- footer --> 
-        <div class="uk-section-default uk-section uk-padding-remove-bottom" style="background: linear-gradient(to right top,  #c31432 0%, #240b36 100%)!important;">
-            <div class="uk-container">
-                <div class="uk-child-width-1-4@m uk-margin-small-top" uk-grid>
-                    <div class="uk-margin-small-top uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-bold" style="color: White;">
-                            <img src="https://www.rathinamcollege.edu.in/wp-content/uploads/2021/03/logo.png" alt="">
-                        </h3>
-                        <p style="color:#fafafa" class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                    </div>
-                    <div>
-                        <h3 class="uk-margin-remove uk-text-bold uk-text-center" style="color: White;">Quick Link</h3>
-                        <ul class="uk-list">
-                            <li class="uk-text-capitalize uk-text-center">
-                                <a href="#" style="color: White;">Home</a>
-                            </li>
-                            <li class="uk-text-capitalize uk-text-center">
-                                <a href="#" style="color: White;">Admission</a>
-                            </li>
-                            <li class="uk-text-capitalize uk-text-center">
-                                <a href="#" style="color: White;">Course</a>
-                            </li>
-                            <li class="uk-text-capitalize uk-text-center">
-                                <a href="#" style="color: White;">Program</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="uk-text-center">
-                        <h3 class="uk-margin-remove uk-text-bold uk-text-center" style="color: White;">Contact</h3>
-                        <p class="uk-margin-small" style="color: White;"><b>Address : </b><br>Rathinam Techzone Campus, Pollachi Road, Eachanari, Coimbatore, Tamil Nadu, India - 641021.</p>
-                        <p class="uk-margin-remove" style="color: White;">
-                            <b>ping me :</b>
-                            <br>
-                            <a href="tel:0422 4040906" class="uk-margin-remove-top" style="color: White;">
-                                0422-4040906
-                            </a>
-                            <a href="tel:+91 8448448909" class="uk-margin-remove-top" style="color: White;"> +91 84484 48909
-                            </a>
-                        </p>
-                    </div>
-                    <div class="uk-text-center">
-                        <h3 class="uk-text-bold uk-text-center" style="color: White;">Location</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.3801303621453!2d76.97641001411769!3d10.93463125924519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85beadb7201f3%3A0xf3ce2a464d288f13!2sRathinam%20Institute%20of%20Management!5e0!3m2!1sen!2sin!4v1644294274158!5m2!1sen!2sin" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <p class="uk-margin-small-bottom uk-text-center uk-text-meta" style="color: white;">Copyrights © 2020. Rathinam Group of Institutions</p>
+        <div class="uk-section-default uk-section uk-padding-remove" style="background: linear-gradient(to right top,  #c31432 0%, #240b36 100%)!important;">
+            <p class="uk-margin-small uk-text-center uk-text-meta" style="color: white;">Copyrights © 2020. Rathinam Group of Institutions</p>
         </div>
     </body>
     </html>
