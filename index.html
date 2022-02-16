@@ -77,7 +77,7 @@
             </div>        
         </div>
         <!-- nav bar -->
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar style="background: #fafafa;">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar style="background: #fafafa;">
             <div class="uk-navbar-left uk-margin-medium-left">
                 <a class="uk-navbar-item uk-logo" href="#" >
                   <img src="https://www.rathinamcollege.edu.in/wp-content/uploads/2021/03/logo.png" alt="">
@@ -150,12 +150,11 @@
                         </a>
                     </li>
                   </ul>
-                </div>
-                    
+                </div>                    
             </nav>          
         </div> 
-        <div class="uk-hidden@m">
-            <nav class="uk-navbar-container" uk-navbar style="background: linear-gradient(to right, #ff9068 0%, #f7797d 100%)!important;">
+        <div class="uk-hidden@m"uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" uk-scrollspy-nav="closest: 'li'; scroll:true; offset: 100;">
+            <nav class="uk-navbar-container" uk-navbar style="background: linear-gradient(to right top,  #c31432 0%, #240b36 100%)!important;">
                 <div class="uk-navbar-left uk-margin-medium-left">
             
                     <ul class="uk-navbar-nav">
@@ -177,8 +176,8 @@
                                     </svg>
                                 </button>
                                 <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-                                    <div class="uk-offcanvas-bar "style="background: linear-gradient(to right, #ff9068 0%, #f7797d 100%)!important;">
-                                
+                                    <div class="uk-offcanvas-bar "style="background: linear-gradient(to right top,  #c31432 0%, #240b36 100%)!important;">
+                                        <button class="uk-offcanvas-close uk-light" type="button" uk-close></button>
                                         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                                             <li class="uk-padding">
                                                 <a href="">
@@ -199,37 +198,31 @@
                                             <li class="uk-nav-divider"></li>
                                             <li class="">
                                                 <a href="#course" onclick="course()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
-                                                    course fee
+                                                    How to apply
                                                 </a>
                                             </li>
                                             <li class="uk-nav-divider"></li>
                                             <li class="">
-                                                <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                <a href="#campus" onclick="campus()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
                                                     campus life
                                                 </a>
                                             </li>
                                             <li class="uk-nav-divider"></li>
                                             <li class="">
-                                                <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
-                                                    course fee
-                                                </a>
-                                            </li>
-                                            <li class="uk-nav-divider"></li>
-                                            <li class="">
-                                                <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                <a href="#scholar" onclick="scholar()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
                                                     scholarship
                                                 </a>
                                             </li>
                                             <li class="uk-nav-divider"></li>
                                             <li class="">
-                                                <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                <a href="#loan" onclick="loan()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
                                                     education loan
                                                 </a>
                                             </li>
                                             <li class="uk-nav-divider"></li>
                                             <li class="">
-                                                <a href="" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
-                                                    hotel fee
+                                                <a href="#hostel" onclick="hostel()" class="uk-text-capitalize uk-text-bold" id="nav-text" style="padding: 0 22px;">
+                                                    hostel fee
                                                 </a>
                                             </li>
                                             <li class="uk-nav-divider"></li>
@@ -1069,7 +1062,7 @@
                         </div>
                         <div id="course"> 
                             <div class="uk-grid-small" uk-grid>
-                                <div class="uk-width-3-4@m uk-width-1-1@s">
+                                <div class="uk-width-1-1@s">
                                     
                                     <div class="uk-card uk-text-center uk-card-default uk-padding-small">
                                         <div class="uk-padding-small">
@@ -1342,38 +1335,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="uk-width-1-4 uk-visible@s">
-                                    <div class="uk-inline">
-                                        <img src="./assets/studentwithbook.jpg" alt="">
-                                        <div class="uk-overlay uk-padding-small uk-overlay-primary uk-position-bottom">
-                                            <a href="tel:+91 8448448909">+91 8448448909</a>
-                                        </div>
-                                    </div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-text-center" style="">
-                                        <span class="uk-h3" style="color: #333;">Important Link</span>
-                                    </div>
-                                    <a href="#scholar" style="text-decoration: none;">
-                                        <div class="uk-card uk-card-default uk-padding-small uk-text-left"style="">
-                                            <span class="uk-h3 uk-text-capitalize" style="color: #333;">Know your scholarship</span>
-                                        </div>
-                                    </a>
-                                    <a href="" style="text-decoration: none;">
-                                        <div class="uk-card uk-card-default uk-padding-small uk-text-left"style="">
-                                            <span class="uk-h3 uk-text-capitalize" style="color: #333;">Know your campus</span>
-                                        </div>
-                                    </a>
-                                    <a href="" style="text-decoration: none;">
-                                        <div class="uk-card uk-card-default uk-padding-small uk-text-left"style="">
-                                            <span class="uk-h3 uk-text-capitalize" style="color: #333;">FAQ's</span>
-                                        </div>
-                                    </a>
-                                    <a href="" style="text-decoration: none;">
-                                        <div class="uk-card uk-card-default uk-padding-small uk-text-left"style="">
-                                            <span class="uk-h3 uk-text-capitalize" style="color: #333;">Where we are</span>
-                                        </div>
-                                    </a>
-                                </div>                                
+                                </div>                              
                             </div>
                             
                         </div> 
