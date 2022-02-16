@@ -82,4 +82,58 @@ h1 {
     max-width: 255px;
     background-color: #333;
   }
+  /* mob-stepper */
+  .mob-container {
+    width: 50;
+  }
   
+  .mob-step {
+    
+    padding: 9px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    background-color: cream;
+  }
+  
+  .v-stepper {
+    position: relative;
+  /*   visibility: visible; */
+  }
+  
+  
+  /* regular step */
+  .mob-step .circle {
+    background-color: white;
+    border: 2px solid #c31432;
+    border-radius: 100%;
+    width: 20px;    /* +6 for border */
+    height: 20px;
+    display: inline-block;
+  }
+  
+  .mob-step .line {
+    top: 23px;
+    left: 12px;
+  /*   height: 120px; */
+    height: 100%;
+      
+      position: absolute;
+      border-left: 1px solid rgba(195, 20, 50, 0.5);
+  }  
+  .mob-step.active .circle {
+  visibility: visible;
+    border-color: #c31432;
+  }
+  .mob-step:last-child .line {
+    border-left: 3px solid white;
+    z-index: -1; /* behind the circle to completely hide */
+  }
+  
+  .content {
+    margin-left: 20px;
+    display: inline-block;
+  }
+ 
