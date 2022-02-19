@@ -3,6 +3,11 @@
 {
   color:#333;
 }
+.uk-nav-divider
+{
+  border-top: 1px solid #333 !important;
+  margin: 7px 0px !important;
+}
 .custom-title
 {
   font-family: 'Montserrat', sans-serif;
@@ -26,6 +31,11 @@
   100% { opacity: 1.0; }
  }
 #nav-text
+{
+    color: #333;
+    font-size: 1.2rem;
+}
+#nav-lap-text
 {
     color: #fff;
     font-size: 1.2rem;
