@@ -245,11 +245,11 @@
  .card1 {
 	 display: block;
 	 position: relative;
-	 max-width: 262px;
+	 /* max-width: 262px; */
 	 background: #404040;
 	 border-radius: 4px;
 	 padding: 11px 13px;
-	 margin: 12px;
+	 /* margin: 12px; */
 	 text-decoration: none;
 	 z-index: 0;
 	 overflow: hidden;
@@ -269,7 +269,7 @@
 	 transition: transform 0.25s ease-out;
 }
  .card1:hover:before {
-	 transform: scale(21);
+	 transform: scale(30);
 }
  .card1:hover p {
 	 transition: all 0.3s ease-out;
