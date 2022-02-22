@@ -376,76 +376,70 @@ max-height: 120px;
 }
 
 .scholar-card-1{
-  background-image: url(../assets/scholar-icon/cbse.png);
+  background-image: url(../assets/home-img/scholarship-icon/cbse.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 80px;
 }
 .scholar-card-01{
-  background-image: url(../assets/scholar-icon/farmer.png);
+  background-image: url(../assets/home-img/scholarship-icon/farmer.png);
       background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-02
   {
-    background-image: url(../assets/scholar-icon/service.png);
+    background-image: url(../assets/home-img/scholarship-icon/service.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-03
   {
-    background-image: url(../assets/scholar-icon/alumni.png);
+    background-image: url(../assets/home-img/scholarship-icon/alumni.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-04
   {
-    background-image: url(../assets/scholar-icon/employee.png);
+    background-image: url(../assets/home-img/scholarship-icon/employee.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-05
   {
-    background-image: url(../assets/scholar-icon/academic.png);
+    background-image: url(../assets/home-img/scholarship-icon/academic.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-06
   {
-    background-image: url(../assets/scholar-icon/coporate.png);
+    background-image: url(../assets/home-img/scholarship-icon/coporate.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-08
   {
-    background-image: url(../assets/scholar-icon/mark.png);
+    background-image: url(../assets/home-img/scholarship-icon/mark.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
   .scholar-card-09
   {
-    background-image: url(../assets/scholar-icon/merit.png);
+    background-image: url(../assets/home-img/scholarship-icon/merit.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
   }
-  .scholar-card-10
-  {
-    background-image: url(../assets/scholar-icon/sports.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-  }
+  
   .scholar-card-11
   {
-    background-image: url(../assets/scholar-icon/sibling.png);
+    background-image: url(../assets/home-img/scholarship-icon/sibling.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
